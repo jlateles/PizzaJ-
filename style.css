@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box ;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%; /*tecnica responsiva */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #1f1e1f;
+}
+
+/* menu */
+
+.content {  
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem; /* top, right , bottom, left */
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.content .list-menu li a:hover{
+    color: #ffc506;
+    height: 50px;
+}
+
+/* first section */
+
+.first-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.6), rgba(29, 29, 29, 0.6)), url(img/fundopizza.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontalmente alinhado ao centro */
+    justify-content: center; /* verticalmente alinhado ao centro */
+}
+
+.first-section h1 {
+    color: #ffc506;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.first-section h4 {
+    color: rgb(214, 207, 207);
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 15px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    box-shadow: 0px 10px 40px -12px #ecdda9;
+    transition: all 400ms ease;
+}
+.btn button:hover{
+    border: 2px solid #ffc506;
+    background-color: rgb(214, 207, 207);
+    box-shadow: 0px 10px 40px -12px #b3b1ae;;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+
+/* sobre nós */
+
+.sobre-nos {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 8rem;
+    margin-left: 12rem;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: #ffc506;
+}
+
+.contentsobre p {
+    text-align: center;
+    font-size: 1.6rem;
+    width: 600px;
+
+}
+
+.contentsobre h4{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    color: #ffc506;
+}
+
+#p-segundo {
+    font-size: 1rem ;
+}
+
+/* cardápio */
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(206, 183, 120, 0.8);
+}
+
+.cardapio h2{
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.itens-cardapio {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-cardapio .info h3 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: #ffc506;
+}
+
+.itens-cardapio .info h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+.itens-cardapio .info h4 span {
+    font-size: 1.2rem;
+    color: #585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: #ffc506;
+}
+
+.itens-cardapio div {
+    background-color: #fff6f6;
+    /*box-shadow: 0px 0px 4px 1px; */
+    border-radius: 6px;
+    border: 3px solid #ffc506;
+}
+
+.itens-cardapio img {
+    width: 100%;
+    height: 200px;
+}
+
+.itens-cardapio .info .pedir {
+    width: 200px;
+    height: 35px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    background-color: #ffc506;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.itens-cardapio .info .pedir:hover{
+    color: #fff6f6;
+}
+
+/* contatos */
+
+
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-secao {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.contatos-secao i {
+    margin-right: 1rem;
+}
+
+.contatos-secao div {
+    cursor: pointer;
+}
+
+footer {
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
